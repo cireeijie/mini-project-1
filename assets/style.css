@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --main-color: #083AA9;
+    --secondary-color: #000000;
+    --grey-color: #3D3D3D;
+    --light-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.primary-btn {
+    background-color: var(--main-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--main-color);
+    padding: 10px 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icon {
+    margin-left: -8px;
+    opacity: 0;
+    transition: all ease-in-out .2s;
+}
+
+.primary-btn:hover .btn-icon {
+    margin-left: 8px;
+    opacity: 1;
+    color: white;
+}
+
+.secondary-btn:hover {
+    color: var(--main-color);
+}
+
+.secondary-btn:hover .btn-icon {
+    margin-left: 8px;
+    opacity: 1;
+    color: var(--main-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hammersmith One', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #3D3D3D;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-section {
+    background-color: var(--light-color);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-row {
+    width: 80%;
+    max-width: 1440px;
+}
+
+.section-container {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--grey-color);
+}
+
+.nav-brand .logo img {
+    width: 50px;
+}
+
+.brand-name {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 30px;
+}
+
+.nav-items {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.item a {
+    color: var(--grey-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.active-link a {
+    color: #083AA9;
+    font-weight: 600;
+}
+
+.nav-action-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.slider-section .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-section .first-slide {
+    background-image: url(images/araw.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-section .second-slide {
+    background-image: url(images/roxas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-section .third-slide {
+    background-image: url(images/camella.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.slider-section .carousel-item .content-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-section .carousel-content {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.slider-section .carousel-content .slide-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider-section .carousel-content .text {
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.slider-section .carousel-content .text p {
+    font-size: 14px;
+}
+
+.carousel-control-next-icon {
+    background-image: url(images/icons/chevron-right-solid.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(images/icons/chevron-left-solid.svg);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--secondary-color);
+}
+
+.about-section {
+    background-color: #f9f9f9;
+}
+
+.about-section .about {
+    display: flex;
+    align-items: center;
+}
+
+.about-section .first-column {
+    flex: 0.6;
+    padding: 20px 0;
+}
+
+.line {
+    display: inherit;
+    width: 70px;
+    border-top: 3px solid var(--main-color);
+    margin-bottom: 20px;
+}
+
+.about-section .first-column p {
+    margin-bottom: 20px;
+}
+
+.about-section .first-column .read-more {
+    display: inline-block;
+}
+
+.about-section .second-column {
+    flex: 0.4;
+    padding: 20px;
+}
+
+.about-section .second-column img {
+    width: 100%;
+}
+
+.organizers-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.organizers-section .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.organizers-section .section-container .section-desc {
+    flex: 0.5;
+}
+
+.organizers-section .section-container .organizer-cards {
+    flex: 0.5;
+    display: flex;
+    gap: 20px;
+}
+
+.organizer-card {
+    min-width: 300px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: all ease-in-out .2s;
+}
+
+.organizer-card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.organizer-card h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: var(--grey-color);
+}
+
+.organizer-card .rating {
+    color: gold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.organizer-card p {
+    font-size: 12px;
+    padding: 0 20px 20px 20px;
+}
+
+.organizer-card img {
+    width: 100%;
+    background-color: #000000;
+}
+
+.organizers-section .view-organizers {
+    display: inline-block;
+    padding-top: 20px;
+
+}
+
+.review-slider-section {
+    background-color: #f9f9f9;
+}
