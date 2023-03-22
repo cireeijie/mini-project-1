@@ -158,6 +158,7 @@ section {
     background-color: var(--main-color);
     color: var(--light-color);
     padding: 5px 10px;
+    border-radius: 50px;
 }
 
 .active-link a {
@@ -174,15 +175,17 @@ section {
 }
 
 .nav-action-btns .login {
+    display: flex;
+    align-items: center;
     color: var(--grey-color);
     padding: 0 10px;
     transition: all ease-in-out .2s;
 }
 
-.nav-action-btns .login:hover {
-    background-color: var(--main-color);
-    color: var(--light-color);
-    padding: 5px 10px;
+.nav-action-btns .login:hover .btn-icon {
+    margin-left: 8px;
+    opacity: 1;
+    color: var(--grey-color);
 }
 
 .slider-section .carousel {
