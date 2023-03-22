@@ -1,0 +1,22 @@
+@media (max-width: 1460px) {
+    .organizers-section .section-container {
+        flex-direction: column;
+    }
+    
+    .organizers-section .section-container .organizer-cards {
+        flex-wrap: wrap;
+    }
+
+    .organizers-section .section-desc {
+        flex: 1 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .organizer-cards {
+        flex: 1 !important;
+    }
+}
