@@ -143,13 +143,21 @@ section {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 20px;
+    gap: 10px;
 }
 
 .item a {
     color: var(--grey-color);
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    padding: 0 10px;
+    transition: all ease-in-out .2s;
+}
+
+.item a:hover {
+    background-color: var(--main-color);
+    color: var(--light-color);
+    padding: 5px 10px;
 }
 
 .active-link a {
@@ -158,8 +166,23 @@ section {
 }
 
 .nav-action-btns {
+    width: 200px;
     display: flex;
-    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-action-btns .login {
+    color: var(--grey-color);
+    padding: 0 10px;
+    transition: all ease-in-out .2s;
+}
+
+.nav-action-btns .login:hover {
+    background-color: var(--main-color);
+    color: var(--light-color);
+    padding: 5px 10px;
 }
 
 .slider-section .carousel {
@@ -448,8 +471,13 @@ section {
     font-size: 18px;
 }
 
+.contact-section .first-column a {
+    color: var(--grey-color);
+}
+
 .contact-section .first-column span {
     font-size: 14px;
+    color: var(--grey-color);
 }
 
 .contact-section .first-column .map {
