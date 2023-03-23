@@ -102,6 +102,8 @@ section {
     justify-content: center;
 }
 
+/* Homepage CSS end */
+
 .navbar-section {
     background-color: var(--light-color);
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
@@ -137,6 +139,10 @@ section {
 .brand-name {
     font-family: 'Hammersmith One', sans-serif;
     font-size: 30px;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .nav-items {
@@ -202,7 +208,7 @@ section {
 }
 
 .slider-section .second-slide {
-    background-image: url(images/roxas.jpg);
+    background-image: url(images/roxas2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -211,7 +217,7 @@ section {
 .slider-section .third-slide {
     background-image: url(images/camella.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -346,11 +352,14 @@ section {
 
 .organizers-section .section-container .organizer-cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .organizer-card {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
+    min-width: 280px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     overflow: hidden;
@@ -428,7 +437,9 @@ section {
 }
 
 .review-slider-section .review-card {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,14 +448,17 @@ section {
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     padding: 20px;
+    position: relative;
 }
 
 .review-slider-section .review-card .quote-icon {
+    position: absolute;
+    top: 0;
     font-size: 30px;
     height: 50px;
     width: 50px;
     border-radius: 50px;
-    margin-top: -45px;
+    margin-top: -25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -576,3 +590,74 @@ textarea {
 .footer-section .social a {
     color: var(--light-color);
 }
+
+/* Homepage CSS end */
+
+/* About Page CSS Start */
+
+.header-section {
+    background-image: linear-gradient(to right, white, transparent), url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-section .section-container {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+.vmo-section .section-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0;
+}
+
+.vmo-section .first-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vmo-section .first-column p {
+    font-size: 14px;
+}
+
+.vmo-section .vision-content, 
+.vmo-section .mission-content {
+    display: flex;
+    align-items: center;
+}
+
+.vmo-section .vision-content img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.vmo-section .mission-content img {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.vmo-section .second-column ul {
+    padding: 0;
+}
+
+.vmo-section .second-column p {
+    font-size: 14px;
+}
+
+.vmo-section .second-column li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.vmo-section .second-column i {
+    color: var(--main-color);
+}
+
+/* About Page CSS End */

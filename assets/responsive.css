@@ -1,22 +1,109 @@
-@media (max-width: 1460px) {
-    .organizers-section .section-container {
+@media (max-width: 1120px) {
+    #reviewSlides .carousel-content {
         flex-direction: column;
-    }
-    
-    .organizers-section .section-container .organizer-cards {
-        flex-wrap: wrap;
+        gap: 30px;
     }
 
-    .organizers-section .section-desc {
-        flex: 1 !important;
-        display: flex;
+    #reviewSlides .carousel-content .review-card {
+        flex-direction: row;
+        max-width: none;
+        text-align: left;
+    }
+
+    #reviewSlides .carousel-content .review-card .card-image {
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    .contact-section .section-container {
         flex-direction: column;
+    }
+
+    .contact-section .section-container .second-column {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .navbar-section .navigation {
+        flex-direction: column;
+    }
+
+    .navbar-section .nav-brand {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
+    }
+
+    .navbar-section .navigation .mobile-menu {
+        display: inline-block;
+    }
+
+    .navbar-section .desktop-menu,
+    .navbar-section .nav-action-btns {
+        display: none;
+    }
+
+    .slider-section .carousel-content .text {
+        flex: 1;
+    }
+
+    .about-section .about .first-column {
+        flex: 1;
+    }
+
+    .about-section .about .second-column {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .vmo-section .section-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 775px) {
+    .organizer-card {
+        max-width: none;
+    }
+
+    .contact-section .first-column,
+    .contact-section .first-column .map ,
+    .contact-section .first-column .map iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider-section .carousel-content {
+        padding: 0 15px;
+    }
+
+    .slider-section .carousel-content .text {
+        align-items: center;
         text-align: center;
     }
 
-    .organizer-cards {
-        flex: 1 !important;
+    .slider-section .slide-btn {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 580px) {
+    .vmo-section .vision-image {
+        display: none;
+    }
+
+    .vmo-section .mission-image {
+        display: none;
+    }
+
+    .about-section {
+        height: auto;
+        padding: 40px 0;
     }
 }
