@@ -268,6 +268,11 @@ section {
 .slider-section .carousel-content .text p {
     font-size: 14px;
     margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: pre-wrap;
 }
 
 .carousel-control-next-icon {
@@ -661,3 +666,121 @@ textarea {
 }
 
 /* About Page CSS End */
+
+/* Events Page CSS Start */
+
+.event .carousel-content {
+    height: 60vh
+}
+
+.upcoming-events .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.upcoming-events .event-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card-wrapper .event-card-container {
+    max-width: 300px;
+    width: 100%;
+    min-width: 280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.event-card-container .event-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.event-card-container .event-image img {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.event-card-container .content {
+    display: flex;
+}
+
+.event-card-container .content .date {
+    background-color: var(--main-color);
+    color: var(--light-color) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+
+.event-card-container .content .date .month {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.event-card-container .content .desc {
+    padding: 10px;
+}
+
+.event-card-container .content .desc h3 {
+    font-size: 18px;
+}
+
+.event-card-container .content .desc .location {
+    font-size: 12px;
+}
+
+.event-card-container .content .desc .location i {
+    color: var(--main-color);
+}
+
+.event-card-container .content .desc .action-btn {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.event-card-container .content .desc .action-btn a {
+    font-size: 10px;
+    padding: 5px 10px;
+}
+
+
+/* Events Page CSS End */
+
+/* Organizers Page CSS Start */
+
+#organizers h1 {
+    margin-bottom: 10px;
+}
+
+.organizer-section .organizer {
+    display: flex;
+    align-items: center;
+}
+
+.organizer-section .organizer .first-column p {
+    margin-bottom: 20px;
+}
+
+.organizer-section .organizer .first-column a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Organizers Page CSS End */
