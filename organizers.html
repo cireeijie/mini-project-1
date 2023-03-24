@@ -13,6 +13,108 @@
     <script src="https://kit.fontawesome.com/8876338ff1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Signup Modal Start -->
+    <section id="modal" class="modal-section">
+        <div class="close-trigger" onclick="closeModal()"></div>
+        <div id="modal-container" class="modal-container">
+            <div id="signup-form" class="signup-form">
+                <div class="modal-title">
+                    <h3>Join Us!</h3>
+                </div>
+                <div class="modal-form">
+                    <form action="#">
+                        <div class="input-container">
+                            <input type="emai" placeholder="Email">
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Create password">
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Re-enter password">
+                            <i class="fa-regular fa-eye-slash"></i>
+                        </div>
+                        <!-- <div class="forgot-password">
+                            <a href="#">Forgot password?</a>
+                        </div> -->
+                        <div class="submit-btn">
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div class="user">
+                            <span>
+                                Already have an account?  
+                                <a onclick="toLogin()" >Login</a>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-divider">
+                    <div class="divider"></div>
+                    <span>Or</span>
+                </div>
+                <div class="login-option">
+                    <div class="option-btn">
+                        <a href="#" class="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Login with Facebook</span>
+                        </a>
+                    </div>
+                    <div class="option-btn">
+                        <a href="#" class="google">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Login with Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="login-form" class="signup-form">
+                <div class="modal-title">
+                    <h3>Welcome!</h3>
+                </div>
+                <div class="modal-form">
+                    <form action="#">
+                        <div class="input-container">
+                            <input type="emai" placeholder="Email">
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Enter password">
+                        </div>
+                        <div class="forgot-password">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="submit-btn">
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div class="user">
+                            <span>
+                                Don't have an account? 
+                                <a onclick="toSignup()">Signup</a>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-divider">
+                    <div class="divider"></div>
+                    <span>Or</span>
+                </div>
+                <div class="login-option">
+                    <div class="option-btn">
+                        <a href="#" class="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Login with Facebook</span>
+                        </a>
+                    </div>
+                    <div class="option-btn">
+                        <a href="#" class="google">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Login with Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Signup Modal End -->
+
     <!-- Navbar Start -->
     <section class="navbar-section sticky-top">
         <div class="section-row">
@@ -45,11 +147,11 @@
                     </ul>
                 </nav>
                 <div class="nav-action-btns">
-                    <a class="sign-up primary-btn" href="#">
+                    <a class="sign-up primary-btn" href="#" onclick="signupModal()">
                         <span>Sign Up</span> 
                         <i class="fa-solid fa-chevron-right btn-icon"></i>
                     </a>
-                    <a class="login" href="#">
+                    <a class="login" href="#" onclick="loginModal()">
                         <span>Login</span>
                         <i class="fa-solid fa-right-to-bracket btn-icon"></i>
                     </a>
@@ -563,6 +665,9 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- Custom Modal JS -->
+    <script src="assets/custom.js"></script>
 
 </body>
 </html>
