@@ -57,6 +57,14 @@
     .about-section .about .second-column {
         display: none;
     }
+
+    .organizer-section .organizer .first-column {
+        flex: 1;
+    }
+
+    .organizer-section .organizer .second-column {
+        display: none;
+    }
 }
 
 @media (max-width: 1000px) {
