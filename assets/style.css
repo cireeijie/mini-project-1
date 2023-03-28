@@ -294,7 +294,7 @@ section {
 .about-section .about {
     display: flex;
     align-items: center;
-    height: 100vh;
+    padding: 60px 0;
 }
 
 .about-section .first-column {
@@ -324,6 +324,10 @@ section {
 
 .about-section .second-column img {
     width: 100%;
+}
+
+.organizer-section .section-container {
+    padding: 60px 0;
 }
 
 .organizers-section {
